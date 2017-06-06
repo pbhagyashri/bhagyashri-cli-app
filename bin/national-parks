@@ -1,5 +1,5 @@
 #!/usr/bin/env ruby
 
-require ./lib/national_parks
+require "./lib/national_parks"
 
 NationalParks::CLI.new.call

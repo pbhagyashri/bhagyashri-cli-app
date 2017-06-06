@@ -19,7 +19,18 @@ class NationalParks::CLI
         puts "numbered list of the parks in Alaska."
       when "american samona"
         puts "numbered list of parks in american samona"
+      when "list"
+        list_parks
+      when "exit"
+        greeting
+      else
+        puts "Invalid input. Please enter list or exit"
       end #case input
-    end #while
+    end #while    
   end#start
+
+  def greeting
+    puts "Thank you for using my gem. Have a nice trip!!"
+  end #greeting
+  
 end #NationalParks::CLI

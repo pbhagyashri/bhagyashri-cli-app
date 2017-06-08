@@ -1,5 +1,13 @@
 class NationalParks::Park
-  def test
-    puts "Parks"
+  attr_accessor :name, :history, :wildlife, :state, :activities, :url
+
+  def initialize(name)
+    @name = name
   end
+
+
+
+
+
+
 end

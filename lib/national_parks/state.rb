@@ -14,12 +14,11 @@ class NationalParks::State
   end
 
   def add_park(park)
-    if !park.is_a?(Park)
-      raise "Invalid Park"
-    else
+  #  if !park.is_a?(Park)
+  #    raise "Invalid Park"
+  #  else
       @parks << park
-    end
-    park.state = self
+  #  end
   end
 
   def self.create_states(a)

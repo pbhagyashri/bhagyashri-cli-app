@@ -25,7 +25,6 @@ class NationalParks::Scraper
        all_parks << park.text
     end
     all_parks
-    binding.pry
   end
 
 end

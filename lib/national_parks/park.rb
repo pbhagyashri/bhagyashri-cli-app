@@ -7,12 +7,7 @@ class NationalParks::Park
 
   def self.create_park(a)
     new_park = self.new(a)
-    State.new.add_park(new_park) unless State.parks.include?(new_park)
-
-    end
+    NationalParks::State.new.add_park(new_park) unless NationalParks::State.parks.include?(new_park)
   end
-
-
-
 
 end

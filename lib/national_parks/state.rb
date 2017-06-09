@@ -14,7 +14,7 @@ class NationalParks::State
   end
 
   def add_park(park)
-    if !park.is_a?(NationalParks::State)
+    if !park.is_a?(NationalParks::Park)
       raise "Invalid Park"
     else
       @parks << park

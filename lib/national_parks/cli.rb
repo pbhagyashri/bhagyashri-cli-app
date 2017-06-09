@@ -10,9 +10,8 @@ class NationalParks::CLI
     all_states = NationalParks::Scraper.make_states
     all_states.collect{|s| puts "#{s.name}"}
     all_states
+    binding.pry
   end #list_parks
-
-
 
   def start
     puts "test test"

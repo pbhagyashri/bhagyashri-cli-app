@@ -21,4 +21,8 @@ class NationalParks::State
     end
   end
 
+  def self.create_states(a)
+    self.new(a)
+  end
+
 end

@@ -1,14 +1,14 @@
 class NationalParks::CLI
 
 
-
    def call
      list_parks
      start
    end #call
 
   def list_parks
-    puts "A list of all the parks sorted by states."
+    all_states = NationalParks::Scraper.make_states
+    all_states.collect{|s| puts "#{s.name}"}
   end #list_parks
 
   def start

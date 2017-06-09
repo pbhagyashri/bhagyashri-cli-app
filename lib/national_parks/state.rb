@@ -1,5 +1,5 @@
 class NationalParks::State
-  attr_accessor :name, :parks
+  attr_accessor :name, :parks, :state
 
   @@all = []
 
@@ -19,6 +19,7 @@ class NationalParks::State
     else
       @parks << park
     end
+    park.state = self
   end
 
   def self.create_states(a)

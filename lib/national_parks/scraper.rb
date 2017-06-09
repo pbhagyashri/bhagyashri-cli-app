@@ -16,4 +16,16 @@ class NationalParks::Scraper
     end
   end
 
+  def self.park_scraper
+    doc = Nokogiri::HTML(open("https://travel.mapquest.com/national-parks/national-parks-by-state/"))
+    parks = doc.css(".page-article li")
+
+    all_parks = []
+    parks.each do |park|
+       all_parks << park.text
+    end
+    all_parks
+    binding.pry
+  end
+
 end
